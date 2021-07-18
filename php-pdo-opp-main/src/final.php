@@ -16,7 +16,7 @@ require_once 'headerX.php';
 
         <h1>Congratulations! Here are your results.</h1>
         <p> Dein Ergebnis: <?php echo $_SESSION['score']; ?></p>
-        <a href="questions.php" class="start">Take Again</a>
+        <a href="questions.php" class="start">Try again!</a>
     
     </div>
 
