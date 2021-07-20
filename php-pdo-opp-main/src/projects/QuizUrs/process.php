@@ -1,12 +1,12 @@
 <?php
-include 'database.php';
+include 'config.php';
  
 
 
 
 $_SESSION['score'] = $_SESSION['score'] + $_POST['answer'];
 $_SESSION['counter']++;
-if($_SESSION['TotalQuestions'] == $_SESSION['counter'] ){
+if($_SESSION['TotalQuestions'] == $_SESSION['counter']-1 ){
     header('Location: final.php');
     } else {
         header('Location: questions.php');

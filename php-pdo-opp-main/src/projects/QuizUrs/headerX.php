@@ -19,14 +19,13 @@
         <a href="#"><img src="/images/Qmark.png"></a>
         <ul>
           <li><a href="index.php">Home</a></li>
-          <li><a href="questions.php">Questions</a></li>
+          <li><a href="projects/QuizUrs/questions.php">Questions</a></li>
           <li><a href="2.php">2</a></li>
           <li><a href="3.php">3</a></li>
         </ul>
       </div>
     </nav>
 
-
-
+    
 
   </header>

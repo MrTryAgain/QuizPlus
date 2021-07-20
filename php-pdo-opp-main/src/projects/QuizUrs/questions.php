@@ -1,8 +1,8 @@
 <?php
-include 'database.php'; 
+include 'config.php'; 
 if(!isset($_SESSION['score'])){
     $_SESSION['score'] = 0;
-    $_SESSION['counter'] = 1;//counter statndartwert ist auf 1 gesetzt, um die Nummer der Frage abzuändern, den Wert auf -2, +3 als Beispiel, Echo Ausgabe darauf achten das man eine Wert erhöht oder minus um eine ander Frage auszugebn
+    $_SESSION['counter'] = 1;//counter standartwert ist auf 1 gesetzt, um die Nummer der Frage abzuändern, den Wert auf -2, +3 als Beispiel, Echo Ausgabe darauf achten das man eine Wert erhöht oder minus um eine ander Frage auszugebn
 
 }
 
@@ -11,11 +11,11 @@ require_once 'headerX.php';
 
 //Vorbereitung und abfrage der Fragen aus der DB
 $query = $connection->query("SELECT * FROM Questions");
-$counter = $_SESSION['counter'];
-$questions = $query->fetchALL(PDO::FETCH_ASSOC);
-//Vorbereitung und abfrage der Antworten aus der DB
-$query = $connection->query("SELECT * FROM Answers");
-$answers = $query->fetchALL(PDO::FETCH_ASSOC);
+$counter = $_SESSION['counter']; /*Constant DB_NAME already defined in /var/www/php/projects/QuizUrs/database.php on line 19
+
+Warning: Constant DB_USER already defined in /var/www/php/projects/QuizUrs/database.php on line 20
+
+Warning: Constant DB_PASSWORD already defined in /var/www/php/projects/QuizUrs/database.php on line 21*/
 
 $_SESSION['TotalQuestions'] = count($questions);
 

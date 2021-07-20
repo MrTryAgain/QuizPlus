@@ -1,6 +1,6 @@
 <?php
-include 'database.php';
-require_once 'headerX.php';
+require_once 'projects/QuizUrs/config.php';
+require_once 'projects/QuizUrs/headerX.php';
 //require_once "src/include/header.php";
 unset($_SESSION);
 session_destroy();
@@ -22,13 +22,13 @@ session_destroy();
 
       <br>
       <div style="text-align: center;">
-        <a class="nextPage" href="questions.php">Start Quiz</a>
+        <a class="nextPage" href="projects/QuizUrs/questions.php">Start Quiz</a>
       </div>
         
       
   </div>
 
-<?php include 'footerX.php'; ?>
+<?php include 'projects/QuizUrs/footerX.php'; ?>
 
 
 
